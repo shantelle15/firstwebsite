@@ -1,6 +1,51 @@
-h1 {
+body {
+  background-color: white;
+  background-image: url(sunrise2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+h1,h2 {
+  font-family: sans-serif;
   color: turquoise;
+  text-align: center;
+  text-shadow: 2px 2px 4px black;
+  line-height: 2rem;
 }
-h2 {
-  color: purple;
+
+div.container h3 {
+  color: #6fadba;
+  text-shadow: 0.5px 0.5px 1px black;
+  text-align: center;
 }
+
+.container {
+  width: 1000px;
+  height: 500px;
+  background-color: #beaad2;
+  margin: auto;
+  background: linear-gradient(to top, #6a5ec9,lavender);
+  box-shadow: 3px 5px 5px black;
+}
+
+ul li { /* parent is ul, descendent is li i.e. all li elements in a unordered list will inherit these properties */
+  color: white;
+  font-size: 20px;
+}
+
+ul > li { /* parent is ul, child is li i.e. only li elements in one level below ul will inherit these properties - sublists don't change */
+  color: midnightblue;
+  font-size: 20px;
+}
+
+.borderimg {
+  border: 2px dashed black;
+}
+
+.contactform {
+  color: white;
+}
+
+/* id can use #idname or [id="idname"] BUT latter is know as editing an attribute, not an id */
+/* inline css gives highest specificity */
